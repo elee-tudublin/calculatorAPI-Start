@@ -17,7 +17,7 @@ router.get('/', function (req, res) {
 
 // Get the sum of two numbers sent via the request Querystring and return the result
 // endpoint is /calculator/add?a=1&b=1
-router.get('/add', function (req, res) {
+router.get('/add', (req, res) => {
     
     // Declare variables for input
     let numA = "";
