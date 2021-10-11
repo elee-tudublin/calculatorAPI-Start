@@ -42,7 +42,7 @@ app.use('/calculator', require('./controllers/calculator'));
 
 
 // catch 404 and forward to error handler
-app.use(function (req, res, next) {
+app.use((req, res, next) => {
     var err = new Error('Not Found: '+ req.method + ":" + req.originalUrl);
     err.status = 404;
     next(err);
